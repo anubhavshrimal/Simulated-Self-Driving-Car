@@ -1,2 +1,6 @@
 data/
 self-driving-car.ipynb
+
+\.idea/
+
+__pycache__/
