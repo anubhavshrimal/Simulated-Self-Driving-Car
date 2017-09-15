@@ -1,50 +1,41 @@
-#parsing command line arguments
 import argparse
-#decoding camera images
+# decoding camera images
 import base64
-#for frametimestamp saving
 from datetime import datetime
-#reading and writing files
 import os
-#high level file operations
 import shutil
-#matrix math
 import numpy as np
-#real-time server
+# real-time server
 import socketio
-#concurrent networking 
+# concurrent networking
 import eventlet
-#web server gateway interface
+# web server gateway interface
 import eventlet.wsgi
-#image manipulation
 from PIL import Image
-#web framework
+# web framework
 from flask import Flask
-#input output
 from io import BytesIO
 
-#load our saved model
 from keras.models import load_model
 
-#helper class
 import utils
 
-#initialize our server
+# initialize our server
 sio = socketio.Server()
-#our flask (web) app
+# our flask (web) app
 app = Flask(__name__)
-#init our model and image array as empty
+# initialize our model and image array as empty
 model = None
 prev_image_array = None
 
-#set min/max speed for our autonomous car
-MAX_SPEED = 25
+# set min/max speed for our autonomous car
+MAX_SPEED = 30
 MIN_SPEED = 10
 
-#and a speed limit
+# and a speed limit
 speed_limit = MAX_SPEED
 
-#registering event handler for the server
+# registering event handler for the server
 @sio.on('telemetry')
 def telemetry(sid, data):
     if data:
