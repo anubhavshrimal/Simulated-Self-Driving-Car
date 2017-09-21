@@ -6,7 +6,7 @@ This is the code for training a machine learning model to drive a simulated car 
 
 ## Demo
 
-[![Simulated Self Driving Car Project Demo](https://i.ytimg.com/vi/1JG-T4iP6dk/hqdefault.jpg?sqp=-oaymwEXCPYBEIoBSFryq4qpAwkIARUAAIhCGAE=&rs=AOn4CLBCc9pTaObG5_xewpSSMiNSctQVCA)](https://www.youtube.com/watch?v=1JG-T4iP6dk&t=1s)
+[![Simulated Self Driving Car Project Demo](images/jungle_track.png)](https://www.youtube.com/watch?v=1JG-T4iP6dk&t=1s)
 
 ## Dependencies
 
