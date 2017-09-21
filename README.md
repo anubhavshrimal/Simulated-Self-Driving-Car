@@ -38,7 +38,7 @@ cd Simulated_Self_Driving_Car/
 Start up the [Udacity self-driving simulator](https://github.com/udacity/self-driving-car-sim), choose a scene and press the Autonomous Mode button.  Then, run the model as follows:
 
 ```python
-python drive.py model.h5
+python drive.py model-mix.h5
 ```
 
 ### To train the model
@@ -54,7 +54,7 @@ python drive.py model.h5
 5. The run the following command:
 
     ```python
-    python model.py
+    python model-mix.py
     ```
 
 This will generate a file `model-<epoch>.h5` whenever the performance in the epoch is better than the previous best.  For example, the first epoch will generate a file called `model-000.h5`.
